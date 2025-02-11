@@ -1,0 +1,20 @@
+name: 01 - Build and push image to Docker Hub
+on: push
+jobs:
+    echo-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+             
+              run: echo "Hello, world!"
+    
+    echo-goodbye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+             
+              run: |
+                echo "Goodbye, world!"
+                exit  1
+            - name: Say goodbye again
+              run: echo "Uploading a file"
