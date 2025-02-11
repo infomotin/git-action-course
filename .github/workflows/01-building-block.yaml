@@ -5,7 +5,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-             
               run: echo "Hello, world!"
     
     echo-goodbye:
@@ -17,4 +16,4 @@ jobs:
                 echo "Goodbye, world!"
                 exit  1
             - name: Say goodbye again
-              run: echo "Uploading a file"
+              run: echo "goodbye again"
